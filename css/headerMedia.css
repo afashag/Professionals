@@ -1,0 +1,11 @@
+@media (max-width: 1050px) {
+    .header-menu {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .burger-menu{
+        display: block;
+    }
+}

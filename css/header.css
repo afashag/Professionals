@@ -1,0 +1,124 @@
+.wrapper {
+}
+.content {
+}
+.header {
+    background-color: #001731;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25.5px;
+    padding-bottom: 26.5px;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 90px;
+}
+.header-menu__item{
+    margin-right: 24px;
+    list-style: none;
+
+}
+.header-menu__item:last-child{
+    margin-right: 0px;
+
+}
+.header-menu__link {
+    color: var(--white, #FFF);
+    font-family: Gilroy;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.34px;
+    
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-right__lang {
+    color: var(--white-background, #FBFCFF);
+    text-align: right;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+    margin-right: 24px;
+}
+.header-right__arrow{
+    margin-left: 8px;
+}
+.header-right__startBtn {
+    border-radius: 4px;
+    color: var(--white, #FFF);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.13px;
+    background: var(--primary-blue, #398BFF);
+    padding: 8px 12px;
+}
+.header-right__signBtn {
+    border-radius: 4px;
+    background: var(--primary-blue-15, rgba(44, 130, 253, 0.15));
+    color: var(--primary-blue, #398BFF);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.13px;
+    margin-left: 8px;
+    margin-right: 28px;
+    padding: 8px 12px;
+}
+
+.burger{
+    width: 50px;
+    height: 4px;
+    background-color: #FFF;
+    position: relative;
+    display: none;
+    margin-left: 50px;
+}
+
+.burger::before{
+    width: 50px;
+    height: 4px;
+    background-color: #FFF;
+    content: "";
+    position: absolute;
+    bottom: 10px;
+}
+.burger::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 4px;
+    background-color: #FFF;
+}
+
+.burger-menu{
+    background-color: #001731;
+    position: absolute;
+    top: 80px;
+    padding: 50px 100px;
+    display: none;
+}
+
+.burger-menu__item{
+    margin-bottom: 100px;
+    list-style: none;
+}
+
+.burger-menu__item:last-child{
+    margin-bottom: 0px;
+}

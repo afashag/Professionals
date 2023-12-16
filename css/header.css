@@ -87,6 +87,7 @@
     position: relative;
     display: none;
     margin-left: 50px;
+    transition: all 0.3s ease 0s;
 }
 
 .burger::before{
@@ -95,15 +96,34 @@
     background-color: #FFF;
     content: "";
     position: absolute;
-    bottom: 10px;
+    top: 10px;
+    transition: all 0.7s ease 0s;
 }
 .burger::after{
     content: "";
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     width: 50px;
     height: 4px;
     background-color: #FFF;
+    transition: all 0.7s ease 0s;
+}
+
+.burger-transform{
+    width: 0px;
+    height: 0px;
+    
+}
+.burger-transform::before{
+    top: -2.8px;
+    transform: rotate(-45deg);
+    
+    
+}
+.burger-transform::after{
+    transform: rotate(45deg);
+    bottom: 0;  
+    
 }
 
 .burger-menu{
@@ -122,3 +142,4 @@
 .burger-menu__item:last-child{
     margin-bottom: 0px;
 }
+

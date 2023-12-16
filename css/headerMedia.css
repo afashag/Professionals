@@ -6,6 +6,11 @@
         display: block;
     }
     .burger-menu{
+        display: none;
+    }
+    .burger-menu__active{
         display: block;
     }
+
+    
 }
